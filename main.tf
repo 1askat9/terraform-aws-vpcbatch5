@@ -17,7 +17,7 @@ resource "aws_subnet" "main" {
 
 
   tags = {
-    Name = "subnet1"
+    Name = var.subnet1_name
   }
 }
 
@@ -29,7 +29,7 @@ resource "aws_subnet" "main2" {
 
 
   tags = {
-    Name = "subnet2"
+    Name = var.subnet2_name
   }
 }
 
@@ -41,7 +41,7 @@ resource "aws_subnet" "main3" {
 
 
   tags = {
-    Name = "subnet3"
+    Name = var.subnet3_name
   }
 }
 
