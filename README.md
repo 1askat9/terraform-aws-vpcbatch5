@@ -5,6 +5,7 @@
 ```hcl
 module "vpc" {
     source = "1askat9/vpcbatch5/aws"
+    version ="0.0.3
     region = "us-east-2"
     vpc_cidr = "10.0.0.0/16"
     subnet1_cidr = "10.0.1.0/24"
@@ -15,8 +16,8 @@ module "vpc" {
     subnet1_nmae = "hello1"
     subnet1_nmae = "hello2"
     subnet1_nmae = "hello3"
-    ports= [22, 80, 81]
-   
+    {from_port = 22, to_port = 22}, 
+    {from_port = 80, to_port = 80}   #Provide list of ports 
 
 } 
 
